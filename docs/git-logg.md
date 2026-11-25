@@ -97,6 +97,7 @@ Steg GitHub main Din main Annas main
 ## 5. Pull request
 
 Länk till din pull request (på ditt eget repo):
+https://github.com/ripper079/daniel_oikarainen-m5-dag09-git-grenar/pull/1
 
 ## 6. Reflektion
 
