@@ -79,6 +79,21 @@ och lade en komprimiss öppentider, där vi båda är nöjda
 
 Vad är skillnaden mellan `git restore`, `git revert` och `git reset`? Vilken är säkrast när ändringen redan är pushad?
 
+- git revert är den säkraste. Den skapar en NY commit med samma state som den föregående commit hade. Historiken bevaras, fast med +1 commit fram i tiden. Dina kollegor får den "rätta" commiten efter en git pull
+- git restore, hmmm parametrara gör stor skillnad och jag kan inte alla. Men generellt så skrivs innehållet i filen som finns i working/ area över, från staging/index eller från en commit som finns i repository. När du sedan gör en ny commit så
+- git reset skriver om historien. Oftast använder man den på lokala branches. Skriver om historien. Man brukar gå bakåt med reset, dvs branch pekar på en "äldre" commit. Problemet blir när du pushar nästa gång eftersom en vanlig git push får bara flytta serverns branch framåt
+
+- P.S det är så mkt som kan gå fel om man börjar experimentera, bättre göra rätt i början och hålla sig till vissa riktlinjet. Git kan bli hur komplicerat som helst, en parameter kan ändra funktionaliteten väldigt mkt. Git commandon som ändrar historik är problematisk eftersom dina kollegor kan ha pullat ner din historik innan du ändrade din egen.
+
+AI fick genera ett scenario som visar på problematiken
+Steg GitHub main Din main Annas main
+
+1. Alla i synk A B C A B C A B C
+2. Anna pushar D A B C D A B C A B C D
+3. Du kör reset HEAD~1 A B C D A B A B C D <- Här problem börjar
+4. Du committar E A B C D A B E A B C D <- med din main
+5. Du kör push --force A B E A B E A B C D <- Allt galet
+
 ## 5. Pull request
 
 Länk till din pull request (på ditt eget repo):
