@@ -102,3 +102,5 @@ https://github.com/ripper079/daniel_oikarainen-m5-dag09-git-grenar/pull/1
 ## 6. Reflektion
 
 Vad är det värsta som kan hända om man kör `git push --force` på en gren som andra använder?
+Kollegor arbete försvinner pga serverns branch-pekare flyttas till din commit.
+Återigen ändra historik. Många av dessa kommandon används främst lokalt, där det är "ok" att ändra historik. Jag brukar vara försiktig med dessa då jag försöker arbeta "standariserat" till den mån det går. Bara för att det teknisk går att göra betyder det inte ATT man skall göra. Bara OM/NÄR behovet uppstår.
