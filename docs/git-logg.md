@@ -57,12 +57,23 @@ Fråga: Vad är skillnaden mellan en _fast-forward_-merge och en merge som skapa
 Klistra in filen med konfliktmarkörerna, precis som den såg ut innan du löste den:
 
 ```
-(klistra in)
+<<<<<<< HEAD
+Helger: 10–16
+=======
+Helger: 09–17
+>>>>>>> oppentider-sommar-daniel
+Röda dagar: stängt
 ```
 
 Fråga: Vad betyder `<<<<<<< HEAD`, `=======` och `>>>>>>> grennamn`?
+Raderna mellan `<<<<<<< HEAD`, `=======` tillhör första branchen
+Raderna mellan `=======` och `>>>>>>> grennamn`? tillhör branchen oppentider-sommar-daniel
+och dessa 2 rader är i konflict. Git vet inte vilken den ska ta, så programmeraren för avgöra
+vad som är "rätt"
 
 Hur löste du den, och varför blev det så?
+Raderade raderna (Observera raderna) från <<<<<Head och >>>>>>>
+och lade en komprimiss öppentider, där vi båda är nöjda
 
 ## 4. Ångra
 
