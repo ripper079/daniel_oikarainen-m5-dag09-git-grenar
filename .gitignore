@@ -1,0 +1,4 @@
+# Aldrig commita *.env filer. Dessa innehåller känsliga uppgifter, t.ex nycklar och lösenord
+.env
+*.log
+node_modules/
