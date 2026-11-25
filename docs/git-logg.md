@@ -37,7 +37,17 @@ no changes added to commit (use "git add" and/or "git commit -a")
 Klistra in `git log --oneline --graph --all` efter merge:
 
 ```
-(klistra in)
+$ git log --oneline --graph --all
+*   ab22224 (HEAD -> main) Merge branch 'meny-nyheter'
+|\
+| * 7764b4e (meny-nyheter) Lägger till kanelbulle på menyn
+* | a666952 Lägger till telefonummer
+|/
+* 01ede46 (origin/main, origin/HEAD) Steg 1 - Lägga till logoutput
+* 5a5841d Modul 5 i TypeScript med Vite
+* 3804533 Add files via upload
+* f7a13a4 Add files via upload
+* c9a0075 Initial commit
 ```
 
 Fråga: Vad är skillnaden mellan en _fast-forward_-merge och en merge som skapar en egen merge-commit? Svara med egna ord:
