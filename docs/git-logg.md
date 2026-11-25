@@ -94,6 +94,8 @@ Steg GitHub main Din main Annas main
 4. Du committar E A B C D A B E A B C D <- med din main
 5. Du kör push --force A B E A B E A B C D <- Allt galet
 
+P.S Denna formatter gör det inte lätt för mig alltid
+
 ## 5. Pull request
 
 Länk till din pull request (på ditt eget repo):
